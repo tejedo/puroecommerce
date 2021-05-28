@@ -1,0 +1,108 @@
+*{
+	font-family: 'Jost', sans-serif;
+	margin: 0;
+}
+#header{
+
+	background-color: #3a7198;
+	    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.menu li a{
+	color: #fff;
+}
+h1, h2, p, table{
+	font-family: sans-serif;
+	color: #333;
+}
+#slider{
+	width: 100%;
+}
+#slider img{
+	width: 100%;
+}
+#contenido{
+	width: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.wrapper-servicios{
+	display: flex;
+    justify-content: center;
+}
+.beneficiosServicio{
+	
+	display: grid;
+  grid-template-columns: 140px 140px 140px;
+  gap: 25px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.wrapper-posts{
+	display: grid;
+	grid-template-areas: "Post1"
+						"Post2"
+						"Post3";
+	grid-template-rows: 1fr 2fr 1fr;
+	gap: 10px;
+	align-items: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.post-1{
+	grid-area: Post1;
+}
+.post-2{
+	grid-area: Post2;
+}
+.post-3{
+	grid-area: Post3;
+}
+
+h1, h2{
+	color: #40a5ff;
+}
+li{
+	list-style-type: circle;
+}
+p{
+	color: #3a7198;
+}
+.menu-principal{
+	display: flex;
+}
+.menu-item{
+	list-style: none;
+	padding-right: 10px;
+}
+.logo img{
+	margin: 0 auto;
+    display: block;
+}
+.wrapper-footer{
+	background-color: #eee;
+}
+.copyright{
+	display: flex;
+	background-color: #e5e5e5;
+	justify-content: center;
+}
+.menu-footer{
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+.menu-footer li{
+		list-style: none;
+}
+.contacto{
+	display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
