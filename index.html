@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,56 +33,84 @@
 			<img src="imagenes/2016080115blogsecommerce.png" alt="Puro Ecommerce Slider">
 		</div>
 		<div id="contenido">
-			<h1>Nuestros servicios</h1>
-			<div class="wrapper-servicios">
-				<div class="beneficiosServicio">
-					<div class="grid--item1 ">
-						Desarrollo Ecommerce
-					</div>
-					<div class="grid--item2">
-						<th>Posicionamiento en Buscadores</th>
-					</div>
-					<div class="grid--item3">
-						Facebook & Instagram Ads
-					</div>
-					<div class="grid--item4">
-						Desarrollamos tu ecommerce con las mejores prácticas
-					</div>
-					<div class="grid--item5">
-						Trabajamos el SEO de tu Ecommerce.
-						<ul>
-								<li>Seo Onpage</li>
-								<li>Seo Offpage</li>
-						</ul>
-					</div>
-					<div class="grid--item6">
-						Damos visibilidad a tu proyecto a través de la publicidad
-							<ol>
-								<li>Imágenes y vídeos</li>
-								<li>Tráfico Frío</li>
-								<li>Retargeting</li>
-							</ol>
-					</div>
-					
-				</div>
-			</div>
+			<h1 class="pb-4">Nuestros servicios</h1>
+				<div class="accordion" id="accordionExample">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Desarrollo Ecommerce
+				        </button>
+				      </h5>
+				    </div>
 
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Desarrollamos tu ecommerce con las mejores prácticas
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Posicionamiento en Buscadores
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Trabajamos el SEO de tu Ecommerce.
+										<ul>
+												<li>Seo Onpage</li>
+												<li>Seo Offpage</li>
+										</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Facebook & Instagram Ads
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Damos visibilidad a tu proyecto a través de la publicidad
+											<ol>
+												<li>Imágenes y vídeos</li>
+												<li>Tráfico Frío</li>
+												<li>Retargeting</li>
+											</ol>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+
+
+			
+		<div class="container pt-4 pb-4">
 			<h2>Últimos posts</h2>
-			<div class="wrapper-posts">
-				<div class="post-1">
-					<p>Publicación 1</p>
-					<img src="imagenes/blogpost.png" width="20%" height="20%" alt="Puro Ecommerce Post1">
-				</div>
-				<div class="post-2">
-					<p>Publicación 2</p>
-					<img src="imagenes/blogpost.png" width="20%" height="20%" alt="Puro Ecommerce Post2">
-				</div>
-				<div class="post-3">
-					<p>Publicación 3</p>
-					<img src="imagenes/blogpost.png" width="20%" height="20%" alt="Puro Ecommerce Post3">
-				</div>
-			</div>
+  			<div class="row">
+   				<div class="col-sm">
+    				<p>Publicación 1</p>
+					<img src="imagenes/blogpost.png" width="70%" alt="Puro Ecommerce Post1">
+   				</div>
+			    <div class="col-sm">
+			      <p>Publicación 2</p>
+					<img src="imagenes/blogpost.png" width="70%" alt="Puro Ecommerce Post2">
+			    </div>
+			    <div class="col-sm">
+			     <p>Publicación 3</p>
+					<img src="imagenes/blogpost.png" width="70%" alt="Puro Ecommerce Post3">
+			    </div>
+  			</div>
 		</div>
+
 
 		<div id="footer">
 			<div class="wrapper-footer">
@@ -104,6 +133,12 @@
 
 	</div>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
