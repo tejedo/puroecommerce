@@ -2,9 +2,6 @@
 	font-family: 'Jost', sans-serif;
 	margin: 0;
 }
-#contenido img{
-	padding: 3%;
-}
 #header{
 
 	background-color: #f9b234;
@@ -16,7 +13,7 @@
 }
 
 .menu li a{
-	color: #000;
+	color: #fff;
 }
 h1, h2, p, table{
 	font-family: sans-serif;
@@ -29,37 +26,10 @@ h1, h2, p, table{
 	width: 100%;
 }
 #contenido{
-	display: block;
+	width: 100%;
 	padding: 3%;
-}
-.contenido{
-
-    margin: 0 auto;
-    width: 65%;
-    text-align:center;
-
-}
-.contenido--servicios-1{
-	display: flex;
-	flex-direction: column;
-	padding: 5%;
-	text-align:	center; 
-}
-.contenido--servicios-1 img{
-  width: 50%;
-  margin: 0 auto;
-
-}
-.contenido--servicios-2{
-	display: flex;
-	flex-direction: column;
-	padding: 5%;
-	text-align:	center; 
-}
-.contenido--servicios-2 img{
-  width: 50%;
-  margin: 0 auto;
-
+	box-sizing: border-box;
+	text-align: center;
 }
 .wrapper-servicios{
 	display: flex;
@@ -78,6 +48,7 @@ h1, h2, p, table{
 	grid-template-areas: "Post1"
 						"Post2"
 						"Post3";
+	grid-template-rows: 1fr 2fr 1fr;
 	gap: 10px;
 	align-items: center;
 	padding-top: 1rem;
@@ -108,29 +79,17 @@ p{
 .menu-item{
 	list-style: none;
 	padding-right: 10px;
-	transition: font-size 1s;
-}
-.menu-item:hover{
-	font-size: 30px !important;
-
 }
 .logo img{
 	margin: 0 auto;
     display: block;
-}
-#footer{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	bottom: 0px;
 }
 .wrapper-footer{
 	background-color: #eee;
 }
 .copyright{
 	display: flex;
-	background-color: #eeeeee;
+	background-color: #e5e5e5;
 	justify-content: center;
 }
 .menu-footer{
@@ -156,34 +115,4 @@ nav.navbar{
 nav.menu{
 	display: none;
 }
-}
-.navbar.navbar-expand-lg.navbar-light.bg-light{
-	background-color: #f8f9fa00 !important;
-}
-.navbar-light .navbar-toggler {
-    color: rgb(164 191 197);
-    border-color: rgb(84 152 182);
-    background-color: #e9f3fc;
-}
-.navbar-nav.mr-auto {
-    align-items: flex-end;}
-
-
-.navbar-nav.mr-auto li{
-	list-style: none;
-}
-.card-header {
-	background-color: rgb(190 220 243) !important;
-}
-.card-header h5 button{
-	color: #000;
-}
-.blog{
-	display: flex;
-}
-.carousel-item img:hover{
-transform: scale(1.2);
-}
-.carousel-item img{
-transition: transform 1s;
 }
